@@ -1,0 +1,64 @@
+.contacts {
+  background-color: #0a2850;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.about__title {
+  margin: 0;
+  padding: 100px 0 0 80px;
+  max-width: 251px;
+  font-family: "Inter", arial, sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  z-index: 3;
+}
+
+.about__content {
+  padding: 119px 80px 173px 0;
+  max-width: 660px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about__paragraph {
+  margin: 0 0 20px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0px;
+}
+
+.about__circle {
+  width: 426px;
+  height: 426px;
+  background-color: #1878dc;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s infinite ease-in-out;
+  animation-delay: 0;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
